@@ -1,6 +1,6 @@
-package com.isagiongo.accountlimit.model;
+package com.isagiongo.accountlimit.models.entities;
 
-import com.isagiongo.accountlimit.model.request.AccountLimitRequest;
+import com.isagiongo.accountlimit.models.requests.AccountLimitRequest;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public class AccountLimit {
 
     @Id
-    private String id;
+    private String idLimit;
 
     private String idAccount;
 
@@ -31,8 +31,8 @@ public class AccountLimit {
         this.idAccount = accountLimitRequest.getIdAccount();
     }
 
-    public String getId() {
-        return id;
+    public String getIdLimit() {
+        return idLimit;
     }
 
     public String getIdAccount() {
@@ -51,8 +51,8 @@ public class AccountLimit {
         return modifyDate;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdLimit(String idLimit) {
+        this.idLimit = idLimit;
     }
 
     public void setIdAccount(String idAccount) {

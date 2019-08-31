@@ -1,6 +1,6 @@
-package com.isagiongo.accountlimit.model.response;
+package com.isagiongo.accountlimit.models.responses;
 
-import com.isagiongo.accountlimit.model.AccountLimit;
+import com.isagiongo.accountlimit.models.entities.AccountLimit;
 
 import java.math.BigDecimal;
 
@@ -11,7 +11,7 @@ public class AccountLimitResponse {
     private BigDecimal limit;
 
     public AccountLimitResponse(AccountLimit accountLimit) {
-        this.idLimit = accountLimit.getId();
+        this.idLimit = accountLimit.getIdLimit();
         this.limit = accountLimit.getLimit();
     }
 

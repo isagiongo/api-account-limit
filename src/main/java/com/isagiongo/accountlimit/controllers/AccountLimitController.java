@@ -1,8 +1,8 @@
 package com.isagiongo.accountlimit.controllers;
 
-import com.isagiongo.accountlimit.model.AccountLimit;
-import com.isagiongo.accountlimit.model.request.AccountLimitRequest;
-import com.isagiongo.accountlimit.model.response.AccountLimitResponse;
+import com.isagiongo.accountlimit.models.entities.AccountLimit;
+import com.isagiongo.accountlimit.models.requests.AccountLimitRequest;
+import com.isagiongo.accountlimit.models.responses.AccountLimitResponse;
 import com.isagiongo.accountlimit.services.AccountLimitService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

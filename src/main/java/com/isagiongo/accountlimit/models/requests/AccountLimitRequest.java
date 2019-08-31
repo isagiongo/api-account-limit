@@ -1,4 +1,4 @@
-package com.isagiongo.accountlimit.model.request;
+package com.isagiongo.accountlimit.models.requests;
 
 public class AccountLimitRequest {
 
